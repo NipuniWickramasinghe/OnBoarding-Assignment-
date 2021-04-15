@@ -14,15 +14,15 @@
         <form v-on:submit.prevent="submitForm">
              <div class="form-group">
                  <label for="BillAddress1">Billing Address Line 1 *</label>
-                 <input type="text" class="form-control" id="BillAddress1" placeholder="Your name" v-model="form.BillAddress1" required>
+                 <input type="text" class="form-control" id="BillAddress1" placeholder="Your Address Line 1" v-model="form.BillAddress1" required>
             </div>             
             <div class="form-group">
                 <label for="BillAddress2">Billing Address Line 2</label>
-                <input type="text" class="form-control" id="BillAddress2" placeholder="Business name" v-model="form.BillAddress2">
+                <input type="text" class="form-control" id="BillAddress2" placeholder="Your Address Line 2" v-model="form.BillAddress2">
             </div>
              <div class="form-group">
                 <label for="BillCity">City *</label>
-                <input type="text" class="form-control" id="BillCity" placeholder="Phone Code" v-model="form.BillCity" required>
+                <input type="text" class="form-control" id="BillCity" placeholder="your City" v-model="form.BillCity" required>
             </div>
             <div class="form-group">
                 <button class="btn btn-primary">Next</button>
@@ -42,30 +42,24 @@ export default {
                 BillAddress1: '',
                 BillAddress2: '',
                 BillCity: '',
-                // district: '',
              }
         }
     },
     methods:{
-        submitForm(){// button click form submit method, axios for post data
+        submitForm(){                      // button click form submit method, axios for post data
             alert("Do you wish to proceed!");  
             axios.post('https://localhost:44394/api/billings', this.form)
                  .then((res) => {
-                     //Perform Success Action
-                  
-
+                     //Perform Success Action                 
                  })
                  .catch((error) => {
                         if (error.response.status == 401){
-                       alert("Error Please check the connection");  
-                
+                            alert("Error Please check the connection");  
                          }                
                  }).finally(() => {
                      //Perform action in always
                        this.$router.push('/ShippingPage')
-                 });
-                 
-
+                 });                
         }
     }
 }

@@ -14,41 +14,22 @@
         <form v-on:submit.prevent="submitForm">
             <div class="form-group">
                 <label for="ShipAddress1">Address Line 1 *</label>
-                <input type="text" class="form-control"
-                 id="ShipAddress1" 
-                 placeholder="Your name" 
-                 v-model="form.ShipAddress1" 
-                 required>
+                <input type="text" class="form-control" id="ShipAddress1" placeholder="Address Line 1" v-model="form.ShipAddress1" required>
             </div>
             <div class="form-group">
                 <label for="ShipAddress2">Address Line 2</label>
-                <input type="text" 
-                class="form-control" 
-                id="ShipAddress2" 
-                placeholder="Your name" 
-                v-model="form.ShipAddress2">
+                <input type="text" class="form-control" id="ShipAddress2" placeholder="Address Line 2" v-model="form.ShipAddress2">
             </div>
             <div class="form-group">
                 <label for="ShipCity">City *</label>
-                <input type="text" class="form-control" id="ShipCity" placeholder="Your name" v-model="form.ShipCity" required>
+                <input type="text" class="form-control" id="ShipCity" placeholder="Shipping City" v-model="form.ShipCity" required>
             </div>
-            <!-- <div class="form-group">
-                <label for="district">District</label>
-                <select name="district" class="form-control" id="district" v-model="form.district" required>
-                    <option value="negombo">negombo</option>
-                    <option value="colombo">colombo</option>
-                    <option value="galle">galle</option>
-                    <option value="jaffna">jaffna</option>
-                    <option value="kaluthara">kaluthara</option>
-                </select>
-            </div>   -->
             <div class="form-group">
                 <label for="Request">Special Register Requests</label>
-                <textarea name="Request" class="form-control" id="Request" rows="3"
-                                v-model="form.Request"></textarea>
+                <textarea name="Request" class="form-control" id="Request" rows="3" v-model="form.Request"></textarea>
             </div>  
             <div class="form-group">
-                <label for="formControlRange">whould you like to recive a monthly email? *</label><br />
+                <label for="formControlRange">whould you like to recive a monthly email? *</label><br/>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="yes" id="yes" value="yes"
                             v-model="form.EmailSub">
@@ -68,7 +49,7 @@
     </div>
 </template>
 <script>
-import axios from 'axios';
+import axios from 'axios';               //Importing axios
 
 export default {
     name: 'PostFormAxios',
@@ -78,7 +59,6 @@ export default {
                 ShipAddress1: '',
                 ShipAddress1: '',
                 ShipCity: '',
-               // district: '',
                 Request: '',
                 EmailSub: '',
             }
@@ -98,17 +78,10 @@ export default {
                      //Perform action in always
                       alert("Record Submited Successfully!"); 
                        this.$router.push('./')
-                     // data();
 
-                 });
-                 
-
-        },
-
-             
-       
+                 });              
+        },      
 	} 
-
 }
 </script>
 <style>

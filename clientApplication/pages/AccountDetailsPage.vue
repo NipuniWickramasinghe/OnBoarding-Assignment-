@@ -73,14 +73,14 @@
     </div>
 </template>
 <script>
-import axios from 'axios';
+import axios from 'axios';    //Importing axios
 
 export default {
     name: 'PostFormAxios',
     users: '',
     
     data(){
-        return{
+        return{                   
             posts: null,
             form: {
                 name: '',
@@ -102,18 +102,13 @@ export default {
         submitForm(){
              alert("Do you wish to proceed!");  
 
-            axios.post('https://localhost:44394/api/accounts', this.form)                        //Calling post method from Client side
+            axios.post('https://localhost:44394/api/accounts', this.form)   //Calling post method from Client side
                  .then((res) => {
                      //  callback(null, { posts: res.data ,loading: false }) 
-                      this.$router.push('/BillingPage')
-                      
-
+                      this.$router.push('/BillingPage')                    
                  })
                  .catch((error) => {
                      // error.response.status Check status code
-                 }).finally(() => {
-                     //Perform action in always
-                    // alert("Do you wish to proceed!");  
                  });
                  
         },

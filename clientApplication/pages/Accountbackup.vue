@@ -10,10 +10,6 @@
             <b-button href="AccountDetailsPage" variant="info">User Registration Page</b-button>  <!--  New page -->
             </b-button-group>
         </div>
-        <!-- <div>
-            <label for="SearchAccount">Search Account</label>
-            <input type="text" id="id" v-model="id">
-        </div> -->
     <div>
         <table class="table">
         <thead>
@@ -58,19 +54,17 @@
             <td>{{ user.Ship_Address2}}</td> 
             <td>{{ user.Request}}</td>                     
             <td>{{ user.Start_Date}}</td>              
-            <!-- <td>{{ user.Bill_ID}}</td> -->
             </tr>
         </tbody>
         </table>   
     </div>
         <NuxtLink to="AccountDetailsPage">Account Information Page</NuxtLink>
-         <!-- <NuxtLink to="new">Account new</NuxtLink> -->
   </b-container>
 </div>     
 </template>
 
 <script>
-import axios from 'axios';
+import axios from 'axios';   //Importing axios
 
 var users;
 export default {

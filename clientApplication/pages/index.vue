@@ -57,10 +57,7 @@
             <td>{{ user.ShipAddress2}}</td> 
             <td>{{ user.Request}}</td>                     
             <td>{{ user.StartDate}}</td>         
-      
-
-            <!-- <td>{{ user.Bill_ID}}</td> -->
-
+      <!-- This is not completed yet -->
             </tr>
         </tbody>
         </table>   

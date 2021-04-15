@@ -15,17 +15,26 @@ namespace testAppication6.Controllers
     public class AccountsController : ControllerBase
     {
         public static int accountID;
+<<<<<<< Updated upstream
         private readonly TestDB1Context testDBobj;
 
         public AccountsController(TestDB1Context context)
         {
             testDBobj = context;
+=======
+        private readonly TestDB1Context dbObj;
+
+        public AccountsController(TestDB1Context context)
+        {
+            dbObj = context;
+>>>>>>> Stashed changes
         }
 
         // GET: api/Accounts
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Account>>> GetAccounts()
         {
+<<<<<<< Updated upstream
             var products = testDBobj.Accounts
                 .Include(p => p.Billings)
                 .Include(q => q.Shippngs)
@@ -34,13 +43,24 @@ namespace testAppication6.Controllers
             //  return await _context.Accounts.ToListAsync();
         //    return await contact.ToListAsync();
 
+=======
+            var products = dbObj.Accounts
+                .Include(p => p.Billings)
+                .Include(q => q.Shippngs); 
+           
+            return await products.ToListAsync(); ;
+>>>>>>> Stashed changes
         }
 
         // GET: api/Accounts/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Account>> GetAccount(int id)
         {
+<<<<<<< Updated upstream
             var account = await testDBobj.Accounts.FindAsync(id);
+=======
+            var account = await dbObj.Accounts.FindAsync(id);
+>>>>>>> Stashed changes
 
             if (account == null)
             {
@@ -53,11 +73,19 @@ namespace testAppication6.Controllers
         [HttpPost]
         public async Task<ActionResult<Account>> PostAccount(Account account)
         {
+<<<<<<< Updated upstream
             testDBobj.Accounts.Add(account);
             try
             {
               
                 await testDBobj.SaveChangesAsync();
+=======
+            dbObj.Accounts.Add(account);
+            try
+            {
+              
+                await dbObj.SaveChangesAsync();
+>>>>>>> Stashed changes
 
             }
             catch (DbUpdateException)
@@ -82,7 +110,11 @@ namespace testAppication6.Controllers
 
         private bool AccountExists(int id)
         {
+<<<<<<< Updated upstream
             return testDBobj.Accounts.Any(e => e.AccId == id);
+=======
+            return dbObj.Accounts.Any(e => e.AccId == id);
+>>>>>>> Stashed changes
         }
 
         public int getAccountResponseID()   //return ID forien key of billing and shipping

@@ -180,6 +180,8 @@ namespace testAppication6.Models
             OnModelCreatingPartial(modelBuilder);
         }
 
+#pragma warning disable S3251 // Implementations should be provided for "partial" methods
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+#pragma warning restore S3251 // Implementations should be provided for "partial" methods
     }
 }

@@ -7,23 +7,16 @@ using testAppication6.Models;
 
 namespace testAppication6.Controllers
 {
- //Get Data using queries controller
+    //Get Data using queries controller
 
     [Route("api/[controller]")]
     [ApiController]
     public class AccountController : ControllerBase
     {
-<<<<<<< Updated upstream
-        private readonly IConfiguration _config;
-        public AccountController(IConfiguration configuration)
-        {
-            _config = configuration;
-=======
         private readonly IConfiguration config;
         public AccountController(IConfiguration configuration)
         {
             config = configuration;
->>>>>>> Stashed changes
 
         }
 
@@ -38,11 +31,7 @@ namespace testAppication6.Controllers
                         where a.Acc_ID = b.Acc_ID and   
                     a.Acc_ID = s.Acc_ID ";
             DataTable table = new DataTable();
-<<<<<<< Updated upstream
-            string sqlDataSourse = _config.GetConnectionString("TestDB");
-=======
             string sqlDataSourse = config.GetConnectionString("TestDB");
->>>>>>> Stashed changes
             SqlDataReader myreader;
             using (SqlConnection mycon = new SqlConnection(sqlDataSourse))
             {
@@ -60,7 +49,7 @@ namespace testAppication6.Controllers
 
             return new JsonResult(table);
         }
-       
+
     }
 
 

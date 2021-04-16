@@ -4802,6 +4802,7 @@
       "path": "runtime.native.system.security.cryptography.apple/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -5266,6 +5267,7 @@
       "path": "system.collections.specialized/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5554,6 +5556,7 @@
       "path": "system.composition.attributedmodel/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.AttributedModel.dll",
@@ -5568,6 +5571,7 @@
       "path": "system.composition.convention/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.Convention.dll",
@@ -6072,6 +6076,7 @@
       "path": "system.globalization.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -9369,11 +9374,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NipuniWickramasinghe\\source\\repos\\testAppication6\\testAppication6\\testAppication6.csproj",
+      "projectUniqueName": "C:\\Users\\NipuniWickramasinghe\\Desktop\\Project - 1\\OnBoarding-Assignment-\\API\\testAppication6\\testAppication6\\testAppication6.csproj",
       "projectName": "testAppication6",
-      "projectPath": "C:\\Users\\NipuniWickramasinghe\\source\\repos\\testAppication6\\testAppication6\\testAppication6.csproj",
+      "projectPath": "C:\\Users\\NipuniWickramasinghe\\Desktop\\Project - 1\\OnBoarding-Assignment-\\API\\testAppication6\\testAppication6\\testAppication6.csproj",
       "packagesPath": "C:\\Users\\NipuniWickramasinghe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NipuniWickramasinghe\\source\\repos\\testAppication6\\testAppication6\\obj\\",
+      "outputPath": "C:\\Users\\NipuniWickramasinghe\\Desktop\\Project - 1\\OnBoarding-Assignment-\\API\\testAppication6\\testAppication6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9458,7 +9463,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   },

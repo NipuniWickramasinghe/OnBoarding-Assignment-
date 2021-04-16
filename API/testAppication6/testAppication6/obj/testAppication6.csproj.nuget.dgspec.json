@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NipuniWickramasinghe\\source\\repos\\testAppication6\\testAppication6\\testAppication6.csproj": {}
+    "C:\\Users\\NipuniWickramasinghe\\Desktop\\Project - 1\\OnBoarding-Assignment-\\API\\testAppication6\\testAppication6\\testAppication6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NipuniWickramasinghe\\source\\repos\\testAppication6\\testAppication6\\testAppication6.csproj": {
+    "C:\\Users\\NipuniWickramasinghe\\Desktop\\Project - 1\\OnBoarding-Assignment-\\API\\testAppication6\\testAppication6\\testAppication6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NipuniWickramasinghe\\source\\repos\\testAppication6\\testAppication6\\testAppication6.csproj",
+        "projectUniqueName": "C:\\Users\\NipuniWickramasinghe\\Desktop\\Project - 1\\OnBoarding-Assignment-\\API\\testAppication6\\testAppication6\\testAppication6.csproj",
         "projectName": "testAppication6",
-        "projectPath": "C:\\Users\\NipuniWickramasinghe\\source\\repos\\testAppication6\\testAppication6\\testAppication6.csproj",
+        "projectPath": "C:\\Users\\NipuniWickramasinghe\\Desktop\\Project - 1\\OnBoarding-Assignment-\\API\\testAppication6\\testAppication6\\testAppication6.csproj",
         "packagesPath": "C:\\Users\\NipuniWickramasinghe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NipuniWickramasinghe\\source\\repos\\testAppication6\\testAppication6\\obj\\",
+        "outputPath": "C:\\Users\\NipuniWickramasinghe\\Desktop\\Project - 1\\OnBoarding-Assignment-\\API\\testAppication6\\testAppication6\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

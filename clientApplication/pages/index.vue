@@ -10,57 +10,54 @@
             </b-button-group>
         </div>
     <div>
-      <pre>{{posts}}</pre>
-        <table class="table">
+      <!-- <pre>{{posts}}</pre> -->
+      <table class="table">
         <thead>
-            <tr scope="col">
-            <th></th>
+        <tr>
+            <th>AccID</th>
             <th>Name</th>
-            <th>Bill ID</th>
-            <th>Shipping ID</th>
-            <th>Email</th>
-            <th>Monthly Email</th>
-            <th>Phone Code</th>
-            <th>Phone Number</th>
-            <th>Account Address</th>
-            <th></th>
-            <th>District</th>
-            <th>City</th>
-            <th>Billing Address</th>
-            <th>Billing Address</th>
-             <th>Shipping Address </th>
-             <th>Shipping Address </th>
+            <th>B Name</th>
+            <th>PhoneCode ID</th>
+            <th>PhoneNumber</th>
+            <th>AccAddress1</th>
+            <th>AccAddress2</th>
+            <th>BillId</th>
+            <th>ShipId</th>
+            <th>BillAddress1</th>
+            <th>BillAddress2</th>
+            <th>BillCity</th>
+            <th>ShipAddress1</th>
+            <th>ShipAddress2</th>
+             <th>Shipping City </th>
+             <th>Email sub </th>
              <th>Request </th>
              <th>Date </th>
-            </tr>
+        </tr>
         </thead>
-<!-- Getting data into a table using axios  -->
         <tbody>
-            <tr scope="row" v-for="(user, index) in posts" :key="user.Acc_ID">
-            <td>
-            <pre>{{user.Billings[0]}}</pre></td>
-            <td>{{ index + 1 }}</td>
-            <td>{{ user.Name}}</td>
-            <!-- <td>{{ user.Billings[0].[{"BillId"]}} -->
-            <!-- <td>{{ user.Shippngs[0]['ShipId']}}</td> -->
-            <td>{{ user.Email}}</td>
-            <td>{{ user.EmailSub}}</td>
-            <td>{{ user.PhoneCode}}</td>
-            <td>{{ user.PhoneNumber}}</td>
-            <td>{{ user.AccAddress1}}</td>
-            <td>{{ user.AccAddress2}}</td>
-            <td>{{ user.AccDistrict}}</td>
-            <td>{{ user.AccCity}}</td>
-            <!-- <td>{{ user.BillAddress1}}</td> -->
-            <!-- <td>{{ user.Billings[0]["BillAddress1"]}}</td> -->
-            <td>{{ user.ShipAddress1}}</td>
-            <td>{{ user.ShipAddress2}}</td> 
-            <td>{{ user.Request}}</td>                     
-            <td>{{ user.StartDate}}</td>         
-      <!-- This is not completed yet -->
-            </tr>
+        <tr v-for="item in posts" :key="item.AccId">
+            <td>{{ item.AccId }}</td>
+            <td>{{ item.Name }}</td>
+            <td>{{ item.BName }}</td>
+            <td>{{ item.PhoneCode }}</td>
+            <td>{{ item.PhoneNumber }}</td>
+            <td>{{ item.AccAddress1 }}</td>
+            <td>{{ item.AccAddress2 }}</td>
+            <td v-for="bill in item.Billings" :key="bill.BillId">{{ bill.BillId }}</td>
+            <td v-for="ship in item.Shippngs" :key="ship.ShipId">{{ ship.ShipId }}</td>
+            <td v-for="bill in item.Billings" :key="bill.BillId">{{ bill.BillAddress1 }}</td>
+            <td v-for="bill in item.Billings" :key="bill.BillId">{{ bill.BillAddress2 }}</td>
+            <td v-for="bill in item.Billings" :key="bill.BillId">{{ bill.BillCity }}</td>
+            <td v-for="ship in item.Shippngs" :key="ship.ShipId">{{ ship.ShipAddress1 }}</td>
+            <td v-for="ship in item.Shippngs" :key="ship.ShipId">{{ ship.ShipAddress2 }}</td>
+            <td v-for="ship in item.Shippngs" :key="ship.ShipId">{{ ship.ShipCity }}</td>
+            <td v-for="ship in item.Shippngs" :key="ship.ShipId">{{ ship.Request }}</td>
+            <td v-for="ship in item.Shippngs" :key="ship.ShipId">{{ ship.EmailSub }}</td>
+            <td>{{ item.StartDate}}</td>
+
+        </tr>
         </tbody>
-        </table>   
+  </table>
     </div>
       <NuxtLink to="AccountDetailsPage">Account Information Page</NuxtLink><br>     <!--Link to next page -->
          <NuxtLink to="Accountbackup">Backup</NuxtLink>
@@ -69,7 +66,8 @@
 </template>
 
 <script>
-// Importing axios to perform http methods
+
+//Importing axios to perform http methods
 import axios from 'axios';  
 
 var users;
@@ -77,14 +75,13 @@ export default {
     name: 'consume-rest-api',
     data(){
         return{
-            posts: null
-        }
-    },
-    data2(){    return{
+            posts: null,
             posts2: null,
-            name2:null
+            name2:null,
+            BillID: null,
         }
     },
+    
     created() { //Get method axios 
         axios.get(`https://localhost:44394/api/accounts`)            
             .then(response => { 

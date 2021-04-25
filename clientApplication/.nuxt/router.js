@@ -4,11 +4,11 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _61be5560 = () => interopDefault(import('..\\pages\\Accountbackup.vue' /* webpackChunkName: "pages/Accountbackup" */))
-const _370450ba = () => interopDefault(import('..\\pages\\AccountDetailsPage.vue' /* webpackChunkName: "pages/AccountDetailsPage" */))
-const _522dab9b = () => interopDefault(import('..\\pages\\BillingPage.vue' /* webpackChunkName: "pages/BillingPage" */))
-const _4d5ccb88 = () => interopDefault(import('..\\pages\\ShippingPage.vue' /* webpackChunkName: "pages/ShippingPage" */))
-const _26b2d8ba = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _7c5be202 = () => interopDefault(import('..\\pages\\Accountbackup.vue' /* webpackChunkName: "pages/Accountbackup" */))
+const _58284964 = () => interopDefault(import('..\\pages\\AccountDetailsPage.vue' /* webpackChunkName: "pages/AccountDetailsPage" */))
+const _665d7e0c = () => interopDefault(import('..\\pages\\BillingPage.vue' /* webpackChunkName: "pages/BillingPage" */))
+const _99be9e86 = () => interopDefault(import('..\\pages\\ShippingPage.vue' /* webpackChunkName: "pages/ShippingPage" */))
+const _39815c42 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -23,23 +23,23 @@ export const routerOptions = {
 
   routes: [{
     path: "/Accountbackup",
-    component: _61be5560,
+    component: _7c5be202,
     name: "Accountbackup"
   }, {
     path: "/AccountDetailsPage",
-    component: _370450ba,
+    component: _58284964,
     name: "AccountDetailsPage"
   }, {
     path: "/BillingPage",
-    component: _522dab9b,
+    component: _665d7e0c,
     name: "BillingPage"
   }, {
     path: "/ShippingPage",
-    component: _4d5ccb88,
+    component: _99be9e86,
     name: "ShippingPage"
   }, {
     path: "/",
-    component: _26b2d8ba,
+    component: _39815c42,
     name: "index"
   }],
 

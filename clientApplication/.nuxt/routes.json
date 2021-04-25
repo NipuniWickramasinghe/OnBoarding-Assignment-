@@ -2,36 +2,36 @@
   {
     "name": "Accountbackup",
     "path": "/Accountbackup",
-    "component": "C:\\\\Users\\\\NipuniWickramasinghe\\\\Desktop\\\\Project - 1\\\\OnBoarding-Assignment-\\\\clientApplication\\\\pages\\\\Accountbackup.vue",
+    "component": "C:\\\\Users\\\\NipuniWickramasinghe\\\\Desktop\\\\Project - 1\\\\OnBoarding-Assignment-01\\\\clientApplication\\\\pages\\\\Accountbackup.vue",
     "chunkName": "pages/Accountbackup",
-    "_name": "_61be5560"
+    "_name": "_7c5be202"
   },
   {
     "name": "AccountDetailsPage",
     "path": "/AccountDetailsPage",
-    "component": "C:\\\\Users\\\\NipuniWickramasinghe\\\\Desktop\\\\Project - 1\\\\OnBoarding-Assignment-\\\\clientApplication\\\\pages\\\\AccountDetailsPage.vue",
+    "component": "C:\\\\Users\\\\NipuniWickramasinghe\\\\Desktop\\\\Project - 1\\\\OnBoarding-Assignment-01\\\\clientApplication\\\\pages\\\\AccountDetailsPage.vue",
     "chunkName": "pages/AccountDetailsPage",
-    "_name": "_370450ba"
+    "_name": "_58284964"
   },
   {
     "name": "BillingPage",
     "path": "/BillingPage",
-    "component": "C:\\\\Users\\\\NipuniWickramasinghe\\\\Desktop\\\\Project - 1\\\\OnBoarding-Assignment-\\\\clientApplication\\\\pages\\\\BillingPage.vue",
+    "component": "C:\\\\Users\\\\NipuniWickramasinghe\\\\Desktop\\\\Project - 1\\\\OnBoarding-Assignment-01\\\\clientApplication\\\\pages\\\\BillingPage.vue",
     "chunkName": "pages/BillingPage",
-    "_name": "_522dab9b"
+    "_name": "_665d7e0c"
   },
   {
     "name": "ShippingPage",
     "path": "/ShippingPage",
-    "component": "C:\\\\Users\\\\NipuniWickramasinghe\\\\Desktop\\\\Project - 1\\\\OnBoarding-Assignment-\\\\clientApplication\\\\pages\\\\ShippingPage.vue",
+    "component": "C:\\\\Users\\\\NipuniWickramasinghe\\\\Desktop\\\\Project - 1\\\\OnBoarding-Assignment-01\\\\clientApplication\\\\pages\\\\ShippingPage.vue",
     "chunkName": "pages/ShippingPage",
-    "_name": "_4d5ccb88"
+    "_name": "_99be9e86"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\NipuniWickramasinghe\\\\Desktop\\\\Project - 1\\\\OnBoarding-Assignment-\\\\clientApplication\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\NipuniWickramasinghe\\\\Desktop\\\\Project - 1\\\\OnBoarding-Assignment-01\\\\clientApplication\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_26b2d8ba"
+    "_name": "_39815c42"
   }
 ]
